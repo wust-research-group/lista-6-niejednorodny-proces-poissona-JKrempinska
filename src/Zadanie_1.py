@@ -16,12 +16,12 @@ def nonhomogeneous_poisson(lambda_func, T, alpha=2):
     return S
 
 def lambda_func(t):
-    return 2*t
-'''
+    return np.sin(t)
+
 for i in range(3):
-    x = nonhomogeneous_poisson(lambda_func, 5)
+    x = nonhomogeneous_poisson(lambda_func, 100)
     y = np.arange(0, len(x))
     plt.step(x,y)
 plt.show()
-'''
+
 
